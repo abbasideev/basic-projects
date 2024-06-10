@@ -1,2 +1,2 @@
 ## Basic-Projects
-[abbasidev.github.io/Basic-Projects](https://abbasidev.github.io/Basic-Projects/)
+[abbasidev.github.io/basic-projects](https://abbasidev.github.io/basic-projects/)
