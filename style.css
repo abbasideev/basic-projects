@@ -30,6 +30,8 @@ body {
   color: var(--color-primery-1);
   font-size: 2.4rem;
   letter-spacing: 0.1rem;
+  position: relative;
+  min-height: 100vh;
 }
 
 .header {
@@ -38,6 +40,7 @@ body {
   justify-content: center;
   background: var(--color-primery-5);
   height: 14rem;
+  width: 100%;
 
   img {
     height: 6rem;
@@ -102,6 +105,9 @@ body {
   background: var(--color-primery-5);
   height: 14rem;
   gap: 2.4rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 
   h2 {
     font-size: 2.4rem;
