@@ -2,19 +2,11 @@
 
 :root {
   /* Colors */
-  --color-neutral-100: #f5f5f5;
-  --color-neutral-200: #e5e5e5;
-  --color-neutral-300: #e5e5e5;
-  --color-neutral-400: #a3a3a3;
-  --color-neutral-500: #737373;
-  --color-neutral-600: #525252;
-  --color-neutral-700: #404040;
-  --color-neutral-800: #262626;
-  --color-neutral-900: #171717;
-  --color-neutral-950: #0a0a0a;
-  --color-primery-4: #ffa633;
-  --color-primery-5: #ff9000;
-  --color-primery-6: #cc7300;
+  --color-primery-1: #f3f5f7;
+  --color-primery-2: #6c6c6c;
+  --color-primery-3: #1e1e1e;
+  --color-primery-4: #181818;
+  --color-primery-5: #151515;
 
   /* Fonts */
 
@@ -34,65 +26,153 @@ html {
 
 body {
   font-family: "Encode Sans", sans-serif;
-  background: var(--color-neutral-950);
-  color: var(--color-neutral-100);
+  background: var(--color-primery-4);
+  color: var(--color-primery-1);
+  font-size: 2.4rem;
+  letter-spacing: 0.1rem;
 }
 
 .header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  row-gap: 1rem;
-  padding: 2rem 0;
-  background: var(--color-neutral-900);
+  justify-content: center;
+  background: var(--color-primery-5);
+  height: 14rem;
 
   img {
-    display: block;
-    width: 7.4rem;
-    background-color: var(--color-neutral-900);
-    margin-bottom: 0.4rem;
-    font: 1.4rem "Encode Sans", sans-serif;
+    height: 6rem;
   }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  margin: 4.8rem 0;
 
   h1 {
-    font-size: 3.4rem;
+    font-size: 4.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    span {
-      color: var(--color-primery-5);
-    }
+    background-image: linear-gradient(
+      to right,
+      #ef4444 0%,
+      #eab308 25%,
+      #10b981 50%,
+      #0ea5e9 75%,
+      #8b5cf6 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  a {
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.4rem;
-    font-size: 1.8rem;
-    color: var(--color-neutral-700);
-    &:hover,
-    &:active {
-      color: var(--color-neutral-600);
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    list-style: none;
+
+    li {
+      a {
+        &:link,
+        &:visited {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: var(--color-primery-3);
+          color: var(--color-primery-1);
+          width: 80rem;
+          height: 8rem;
+          border-radius: 2.4rem;
+        }
+      }
     }
   }
 }
 
-main {
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primery-5);
+  height: 14rem;
+  gap: 2.4rem;
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
   ul {
-    list-style: none;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    margin: 4rem;
+    gap: 2.4rem;
+    list-style: none;
     li {
-      font-size: 2rem;
-      background-color: var(--color-neutral-900);
-      padding: 1rem 2rem;
-      border-radius: 1rem;
       a {
-        display: block;
-        color: var(--color-neutral-100);
+        &:link,
+        &:visited {
+          color: var(--color-primery-2);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+@media (max-width: 1060px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 860px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 38%;
+  }
+  .main {
+    ul {
+      li {
+        a {
+          &:link,
+          &:visited {
+            width: 70rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 32%;
+  }
+  .main {
+    ul {
+      li {
+        a {
+          &:link,
+          &:visited {
+            width: 60rem;
+          }
+        }
       }
     }
   }
