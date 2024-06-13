@@ -4,7 +4,7 @@
   /* Colors */
   --color-primery-1: #f3f5f7;
   --color-primery-2: #6c6c6c;
-  --color-primery-3: #1e1e1e;
+  --color-primery-3: #262626;
   --color-primery-4: #181818;
   --color-primery-5: #141414;
 }
@@ -43,7 +43,7 @@ body {
   border-bottom: 0.3rem solid var(--color-primery-3);
 
   img {
-    height: 6rem;
+    height: 5rem;
   }
 }
 
@@ -53,10 +53,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 4.8rem;
-  margin: 4.8rem 0;
+  margin: 4.8rem 4.8rem;
 
   h1 {
     font-size: 4.8rem;
+    text-align: center;
     text-transform: uppercase;
     background-image: linear-gradient(
       to right,
@@ -74,8 +75,6 @@ body {
   ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 2.4rem;
     list-style: none;
 
@@ -84,13 +83,12 @@ body {
         &:link,
         &:visited {
           display: flex;
-          align-items: center;
-          justify-content: center;
+          line-height: 150%;
+          min-width: 70rem;
+          padding: 2.4rem;
+          border-radius: 2.4rem;
           background: var(--color-primery-3);
           color: var(--color-primery-1);
-          width: 80rem;
-          height: 8rem;
-          border-radius: 2.4rem;
           box-shadow: 0rem 0.4rem 0.8rem 0rem var(--color-primery-5);
           -webkit-box-shadow: 0rem 0.4rem 0.8rem 0rem var(--color-primery-5);
         }
@@ -153,13 +151,23 @@ body {
   html {
     font-size: 38%;
   }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 32%;
+  }
+}
+
+@media (max-width: 390px) {
   .main {
+    margin: 4.8rem 2.4rem;
     ul {
       li {
         a {
           &:link,
           &:visited {
-            width: 70rem;
+            min-width: 66rem;
           }
         }
       }
@@ -167,17 +175,29 @@ body {
   }
 }
 
-@media (max-width: 460px) {
-  html {
-    font-size: 32%;
-  }
+@media (max-width: 360px) {
   .main {
     ul {
       li {
         a {
           &:link,
           &:visited {
-            width: 60rem;
+            min-width: 62rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .main {
+    ul {
+      li {
+        a {
+          &:link,
+          &:visited {
+            min-width: 58rem;
           }
         }
       }
