@@ -9,7 +9,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap");
 
 :root {
-  /* Colors */
   --color-primery-1: #f3f5f7;
   --color-primery-2: #6c6c6c;
   --color-primery-3: #262626;
@@ -40,17 +39,34 @@ body {
   min-height: 100dvh;
 }
 
+.go-to-top {
+  display: none;
+  position: fixed;
+  bottom: 14.8rem;
+  right: 2rem;
+
+  svg {
+    width: 6.2rem;
+    background: var(--color-primery-2);
+    color: var(--color-primery-4);
+    border-radius: 50%;
+  }
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--color-primery-5);
   width: 100%;
-  padding: 3.2rem 0;
+  height: 12.8rem;
   border-bottom: 0.3rem solid var(--color-primery-3);
+  position: fixed;
+  top: 0;
 
-  img {
+  svg {
     height: 4.8rem;
+    fill: var(--color-primery-1);
   }
 }
 
@@ -60,7 +76,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 4.8rem;
-  margin: 4.8rem 4.8rem;
+  margin: 17.6rem 4.8rem;
 
   h1 {
     font-size: 4.4rem;
@@ -113,9 +129,11 @@ body {
   justify-content: center;
   background: var(--color-primery-5);
   width: 100%;
-  padding: 3.2rem 0;
+  height: 12.8rem;
   gap: 2.4rem;
   border-top: 0.3rem solid var(--color-primery-3);
+  position: fixed;
+  bottom: 0;
 
   h2 {
     font-size: 2.4rem;
@@ -173,7 +191,7 @@ body {
 
 @media (max-width: 390px) {
   .main {
-    margin: 4.8rem 2.4rem;
+    margin: 17.6rem 2.4rem;
     ul {
       li {
         a {
