@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,15 +17,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
 }
 
 a {
   margin-bottom: 10rem;
-  background: rgba(34, 34, 34, 0.7);
+  background: rgba(34, 34, 34, 0.8);
   color: #fff;
   font-size: 3rem;
-  padding: 1.5rem 3rem;
+  padding: 1.6rem 3.2rem;
   border-radius: 5rem;
 }
