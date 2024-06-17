@@ -1,13 +1,32 @@
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap");
+
+:root {
+  --color-primery-1: #f3f5f7;
+  --color-primery-2: #595959;
+  --color-primery-3: #262626;
+  --color-primery-4: #181818;
+  --color-primery-5: #141414;
+}
+
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
   box-sizing: border-box;
   text-decoration: none;
-  background: none;
 }
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  background: var(--color-primery-4);
 }
