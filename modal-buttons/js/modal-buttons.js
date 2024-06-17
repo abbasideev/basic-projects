@@ -1,5 +1,5 @@
 const btns = document.querySelectorAll("[data-target]");
-const close_modals = document.querySelectorAll(".close-modal");
+const closeModals = document.querySelectorAll(".modalHeader button");
 const overlay = document.getElementById("overlay");
 
 btns.forEach((btn) => {
@@ -9,7 +9,7 @@ btns.forEach((btn) => {
   });
 });
 
-close_modals.forEach((btn) => {
+closeModals.forEach((btn) => {
   btn.addEventListener("click", () => {
     const modal = btn.closest(".modal");
     modal.classList.remove("active");

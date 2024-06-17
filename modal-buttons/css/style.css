@@ -1,68 +1,118 @@
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap");
+
+:root {
+  --color-primery-1: #f3f5f7;
+  --color-primery-2: #595959;
+  --color-primery-3: #262626;
+  --color-primery-4: #181818;
+  --color-primery-5: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Encode Sans", sans-serif;
+  background: var(--color-primery-4);
+  color: var(--color-primery-1);
+  letter-spacing: 0.1rem;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.btn {
-  font-size: 1.8rem;
-  padding: 1rem 2rem;
-  color: red;
-  border: 0.1rem solid red;
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.btn:hover,
-.btn:active {
-  background-color: red;
-  color: #fff;
-}
-
-.modal {
-  font-size: 2rem;
-  width: 40rem;
-  position: fixed;
+  gap: 3.2rem;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 0.1rem solid #222;
-  border-radius: 1rem;
+
+  button {
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding: 1.6rem 3.2rem;
+    color: var(--color-primery-1);
+    background: var(--color-primery-3);
+    border-radius: 1.6rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0rem 0.4rem 0.8rem 0rem var(--color-primery-5);
+    -webkit-box-shadow: 0rem 0.4rem 0.8rem 0rem var(--color-primery-5);
+    transition: all 0.2s;
+
+    &:hover,
+    &:active {
+      background: var(--color-primery-2);
+    }
+  }
+}
+
+.modal {
+  min-width: 50rem;
+  max-width: 90rem;
+  min-height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.6rem;
   z-index: 2;
-  background-color: #fff;
+  background: var(--color-primery-3);
   display: none;
-}
 
-.modal.active {
-  display: block;
-}
+  &.active {
+    display: block;
+  }
 
-.close-modal {
-  padding: 0.7rem 1.4rem;
-}
+  .modalHeader {
+    display: flex;
+    align-items: center;
+    border-radius: 1.6rem 1.6rem 0 0;
+    justify-content: space-between;
+    background: var(--color-primery-4);
+    border-bottom: 0.2rem solid var(--color-primery-2);
+    padding: 0.8rem 1.2rem;
 
-.modal .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 0.1rem solid #ccc;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.05);
-}
+    h2 {
+      font-size: 2.4rem;
+      font-weight: 600;
+    }
 
-.modal .body {
-  padding: 2rem;
+    button {
+      border: none;
+      cursor: pointer;
+      background: none;
+      svg {
+        width: 4.4rem;
+        fill: var(--color-primery-2);
+      }
+    }
+  }
+
+  .modalBody {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 150%;
+    padding: 1.6rem 2.4rem;
+  }
 }
 
 #overlay {
@@ -72,9 +122,28 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: var(--color-primery-2);
+  opacity: 50%;
+
+  &.active {
+    display: block;
+  }
 }
 
-#overlay.active {
-  display: block;
+@media (max-width: 860px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 38%;
+  }
 }
