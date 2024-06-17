@@ -152,26 +152,39 @@ body {
   }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 500px) {
   html {
     font-size: 56%;
   }
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 460px) {
   html {
     font-size: 50%;
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 420px) {
   html {
-    font-size: 44%;
+    font-size: 46%;
   }
 }
 
-@media (max-width: 660px) {
-  html {
-    font-size: 38%;
+@media (max-width: 400px) {
+  .footer {
+    ul {
+      gap: 2.4rem;
+    }
+  }
+  .main {
+    ul {
+      li {
+        a {
+          &:any-link {
+            min-width: 44rem;
+          }
+        }
+      }
+    }
   }
 }
