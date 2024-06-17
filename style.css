@@ -100,8 +100,7 @@ body {
           display: flex;
           font-size: 1.6rem;
           font-weight: 400;
-          min-width: 50rem;
-          max-width: 70rem;
+          width: 60rem;
           line-height: 150%;
           padding: 1.6rem;
           border-radius: 2rem;
@@ -152,25 +151,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {
-  html {
-    font-size: 56%;
-  }
-}
-
-@media (max-width: 460px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 420px) {
-  html {
-    font-size: 46%;
-  }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 620px) {
   .footer {
     ul {
       gap: 2.4rem;
@@ -181,10 +162,34 @@ body {
       li {
         a {
           &:any-link {
-            min-width: 44rem;
+            width: 90vw;
           }
         }
       }
     }
+  }
+}
+
+@media (max-width: 460px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 46%;
   }
 }
