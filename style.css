@@ -47,11 +47,10 @@ body {
 }
 
 .container {
-  margin: 2dvh auto;
-  min-height: 96dvh;
+  margin: 0 auto;
+  min-height: 100dvh;
   width: 70rem;
   background: var(--color-primery-4);
-  border-radius: 3.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,13 +63,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: inherit;
   height: 8rem;
+  position: fixed;
 }
 
 .header {
-  border-radius: 3.2rem 3.2rem 0 0;
   border-bottom: 0.2rem solid var(--color-primery-6);
+  top: 0;
 
   button {
     background: none;
@@ -91,8 +91,8 @@ body {
 }
 
 .footer {
-  border-radius: 0 0 3.2rem 3.2rem;
   border-top: 0.2rem solid var(--color-primery-6);
+  bottom: 0;
 
   ul {
     display: flex;
@@ -120,7 +120,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
-  margin: 2.4rem 0;
+  margin: 10.4rem 0;
 
   h1 {
     font-size: 2.8rem;
@@ -184,27 +184,9 @@ body {
 
 @media (max-width: 520px) {
   .container {
-    margin: 0 auto;
     width: 100%;
-    min-height: 100dvh;
   }
-
-  .header,
-  .footer {
-    border-radius: 0;
-    position: fixed;
-  }
-
-  .header {
-    top: 0;
-  }
-
-  .footer {
-    bottom: 0;
-  }
-
   .main {
-    margin: 10.4rem 0;
     ul {
       li {
         a {
