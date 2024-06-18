@@ -29,14 +29,22 @@ html {
 
 body {
   font-family: "Encode Sans", sans-serif;
-  background: var(--color-primery-4);
+  background: var(--color-primery-5);
   color: var(--color-primery-1);
   letter-spacing: 0.1rem;
+}
+
+.container {
+  margin: 2dvh auto;
+  min-height: 96dvh;
+  width: 70rem;
+  background: var(--color-primery-4);
+  border: 0.2em solid var(--color-primery-3);
+  border-radius: 3.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  min-height: 100dvh;
 }
 
 .header,
@@ -44,15 +52,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-primery-5);
   width: 100%;
-  height: 8rem;
-  position: fixed;
+  height: 9.6rem;
 }
 
 .header {
-  border-bottom: 0.1rem solid var(--color-primery-3);
-  top: 0;
+  border-bottom: 0.2rem solid var(--color-primery-3);
 
   svg {
     height: 3.2rem;
@@ -67,15 +72,15 @@ body {
 }
 
 .footer {
-  border-top: 0.1rem solid var(--color-primery-3);
-  bottom: 0;
+  border-top: 0.2rem solid var(--color-primery-3);
 
   ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 60rem;
+    width: inherit;
     list-style: none;
+    margin: 0 2rem;
 
     li {
       a {
@@ -95,7 +100,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
-  margin: 10rem 2.4rem;
+  margin: 2.4rem 0;
 
   h1 {
     font-size: 2.8rem;
@@ -127,8 +132,8 @@ body {
           display: flex;
           font-size: 1.6rem;
           font-weight: 400;
-          width: 60rem;
           line-height: 150%;
+          width: 66rem;
           padding: 1.6rem;
           border-radius: 1.6rem;
           background: var(--color-primery-3);
@@ -139,14 +144,31 @@ body {
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 780px) {
   html {
-    font-size: 58%;
+    font-size: 56%;
   }
-  .footer {
-    ul {
-      width: 90vw;
-    }
+}
+
+@media (max-width: 680px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 580px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    border: none;
+    border-radius: 0;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100dvh;
   }
   .main {
     ul {
@@ -158,29 +180,5 @@ body {
         }
       }
     }
-  }
-}
-
-@media (max-width: 520px) {
-  html {
-    font-size: 54%;
-  }
-}
-
-@media (max-width: 460px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 460px) {
-  html {
-    font-size: 46%;
-  }
-}
-
-@media (max-width: 420px) {
-  html {
-    font-size: 42%;
   }
 }
