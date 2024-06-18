@@ -186,9 +186,19 @@ body {
   .header,
   .footer {
     border-radius: 0;
+    position: fixed;
+  }
+
+  .header {
+    top: 0;
+  }
+
+  .footer {
+    bottom: 0;
   }
 
   .main {
+    margin: 10.4rem 0;
     ul {
       li {
         a {
