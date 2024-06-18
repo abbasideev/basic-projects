@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,12 @@
   <body>
     <section class="container">
       <header class="header">
-        <a href="https://abbasidev.netlify.app/" title="abbasidev.netlify.app">
+        <button
+          id="abbasiDevLogo"
+          type="button"
+          data-theme-toggle
+          aria-label="Change to dark theme"
+        >
           <svg viewBox="0 0 794 485" xmlns="http://www.w3.org/2000/svg">
             <path
               class="path-a"
@@ -30,7 +35,7 @@
               d="M794 241.3C794 373.8 685.4 482.4 552.7 482.4H152.2L198.7 399.2H552.7C639.5 399.2 710.5 327.9 710.5 241.4C710.5 154.6 639.4 83.6 552.7 83.6H378L329.9 0H552.7C685.4 0 794 108.6 794 241.3Z"
             />
           </svg>
-        </a>
+        </button>
       </header>
 
       <main class="main">
@@ -97,5 +102,7 @@
         </ul>
       </footer>
     </section>
+
+    <script src="./app.js"></script>
   </body>
 </html>
