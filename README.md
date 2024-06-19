@@ -1,1 +1,2 @@
-<a href="https://abbasidev.github.io/advanced-projects/" title="abbasidev.github.io/advanced-projects" ><img width="1920" alt="advanced projects" src="https://github.com/abbasidev/advanced-projects/assets/96338051/75d210ab-e127-4b15-840b-b4ab90527bec"></a>
+## Basic Projects
+[abbasidev.github.io/basic-projects](https://abbasidev.github.io/basic-projects/)
