@@ -34,7 +34,7 @@ body {
   margin: 0 2.4rem;
 }
 
-.bg-back {
+.background-back {
   position: fixed;
   top: 0;
   left: 0;
@@ -85,13 +85,13 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.6rem;
-  }
 
-  .square {
-    width: 8.6rem;
-    height: 8.6rem;
-    border-radius: 1rem;
-    background: var(--main-color);
+    div {
+      width: 8.6rem;
+      height: 8.6rem;
+      border-radius: 1rem;
+      background: var(--main-color);
+    }
   }
 
   p {
