@@ -1,4 +1,32 @@
-/* ///////////////////////////// */
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap");
+
+:root {
+  --color-primery-1: #fafafa;
+  --color-primery-2: #1c1c1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--color-primery-2);
+}
 
 .gallery-items {
   display: grid;
@@ -17,49 +45,45 @@ img {
   cursor: pointer;
 }
 
-/* ///////////////////////////// */
-
 .modal {
-  background: var(--color-primery-5);
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100dvw;
+  height: 100dvh;
   display: none;
+  background: var(--color-primery-2);
 }
 
 button {
   position: absolute;
   top: 0;
-  right: 1rem;
-  font-size: 6rem;
-  color: #fff;
+  right: 1.6rem;
+  font-size: 6.2rem;
+  color: var(--color-primery-1);
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.full-img {
+.full-image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  height: 95%;
+  width: 80dvw;
+  height: 95dvh;
   object-fit: contain;
 }
 
-.open-full-img {
+.open-full-image {
   display: block;
 }
 
-/* ///////////////////////////// */
-
 @media (max-width: 900px) {
-  .full-img {
-    width: 95%;
-    height: 80%;
+  .full-image {
+    width: 95dvw;
+    height: 80dvh;
   }
 }
 
@@ -68,5 +92,3 @@ button {
     font-size: 46%;
   }
 }
-
-/* ///////////////////////////// */

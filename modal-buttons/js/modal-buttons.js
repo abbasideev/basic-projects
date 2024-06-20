@@ -1,5 +1,5 @@
 const btns = document.querySelectorAll("[data-target]");
-const closeModals = document.querySelectorAll(".modalHeader button");
+const closeModals = document.querySelectorAll(".modal-header button");
 const overlay = document.getElementById("overlay");
 
 btns.forEach((btn) => {
