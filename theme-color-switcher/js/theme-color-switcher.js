@@ -1,4 +1,4 @@
-document.querySelectorAll(".theme-colors .color").forEach((color) => {
+document.querySelectorAll(".theme-colors div").forEach((color) => {
   color.onclick = () => {
     let background = color.style.background;
     document

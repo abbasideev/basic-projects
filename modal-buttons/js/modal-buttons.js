@@ -1,6 +1,6 @@
 const btns = document.querySelectorAll("[data-target]");
 const closeModals = document.querySelectorAll(".modal-header button");
-const overlay = document.getElementById("overlay");
+const overlay = document.querySelector(".overlay");
 
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
