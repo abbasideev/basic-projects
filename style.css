@@ -6,7 +6,11 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
 */
 
+/* / */
+
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,100..900&display=swap");
+
+/* / */
 
 [data-theme="light"] {
   --color-primery-1: #363636;
@@ -30,6 +34,8 @@
   --color-primery-7: #696969;
 }
 
+/* / */
+
 * {
   margin: 0;
   padding: 0;
@@ -48,6 +54,8 @@ body {
   letter-spacing: 0.1rem;
 }
 
+/* / */
+
 .container {
   margin: 0 auto;
   min-height: 100dvh;
@@ -59,6 +67,8 @@ body {
   justify-content: space-between;
 }
 
+/* / */
+
 .header,
 .footer {
   background: var(--color-primery-3);
@@ -69,6 +79,8 @@ body {
   height: 8rem;
   position: fixed;
 }
+
+/* / */
 
 .header {
   border-bottom: 0.2rem solid var(--color-primery-6);
@@ -115,6 +127,8 @@ button {
   }
 }
 
+/* / */
+
 .footer {
   border-top: 0.2rem solid var(--color-primery-6);
   bottom: 0;
@@ -138,6 +152,8 @@ button {
     }
   }
 }
+
+/* / */
 
 .main {
   display: flex;
@@ -184,30 +200,71 @@ button {
           background: var(--color-primery-3);
           color: var(--color-primery-2);
         }
+        span:first-child {
+          margin-left: 0.8rem;
+        }
       }
     }
   }
 }
 
+/* / */
+
+/* tailwindcss.com colors */
+
+.html {
+  color: #f97316; /* Orange 500 */
+}
+
+.css,
+.typescript,
+.powershell {
+  color: #3b82f6; /* Blue 500 */
+}
+
+.sass {
+  color: #ec4899; /* Pink 500 */
+}
+
+.tailwind-css {
+  color: #06b6d4; /* Cyan 500 */
+}
+
+.javascript {
+  color: #eab308; /* Yellow 500 */
+}
+
+.react,
+.vscode,
+.algorithms {
+  color: #0ea5e9; /* Sky 500 */
+}
+
+.git,
+.web-apis,
+.data-structures {
+  color: #ef4444; /* Red 500 */
+}
+
+.clean-code {
+  color: #22c55e; /* Green 500 */
+}
+
+.next-js,
+.github {
+  color: #a3a3a3; /* Neutral 400 */
+}
+
+.regular-expression {
+  color: #10b981; /* Emerald 500 */
+}
+
+/* / */
+
 @media (max-width: 780px) {
   html {
     font-size: 56%;
   }
-}
-
-@media (max-width: 680px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 580px) {
-  html {
-    font-size: 44%;
-  }
-}
-
-@media (max-width: 520px) {
   .container {
     width: 100%;
   }
@@ -221,5 +278,17 @@ button {
         }
       }
     }
+  }
+}
+
+@media (max-width: 680px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 580px) {
+  html {
+    font-size: 44%;
   }
 }
