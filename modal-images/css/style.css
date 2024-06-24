@@ -1,8 +1,3 @@
-:root {
-  --color-primery-1: #fafafa;
-  --color-primery-2: #1c1c1c;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +10,7 @@ html {
 }
 
 body {
-  background: var(--color-primery-2);
+  background: #ffb4c2;
 }
 
 .gallery-items {
@@ -42,7 +37,7 @@ img {
   width: 100dvw;
   height: 100dvh;
   display: none;
-  background: var(--color-primery-2);
+  background: #ffb4c2;
 }
 
 button {
@@ -50,7 +45,7 @@ button {
   top: 0;
   right: 1.6rem;
   font-size: 6.2rem;
-  color: var(--color-primery-1);
+  color: #252525;
   background: none;
   border: none;
   cursor: pointer;
