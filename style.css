@@ -212,13 +212,13 @@ button {
 
 /* tailwindcss.com colors */
 
-.html {
+.html,
+.git {
   color: #f97316; /* Orange 500 */
 }
 
 .css,
-.typescript,
-.powershell {
+.typescript {
   color: #3b82f6; /* Blue 500 */
 }
 
@@ -240,7 +240,6 @@ button {
   color: #0ea5e9; /* Sky 500 */
 }
 
-.git,
 .web-apis,
 .data-structures {
   color: #ef4444; /* Red 500 */
@@ -251,7 +250,8 @@ button {
 }
 
 .next-js,
-.github {
+.github,
+.powershell {
   color: #a3a3a3; /* Neutral 400 */
 }
 
