@@ -179,6 +179,7 @@ button {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 0 1.2rem;
   }
 
   ul {
@@ -188,9 +189,9 @@ button {
     list-style: none;
 
     li {
+      display: flex;
       a {
         &:any-link {
-          display: flex;
           font-size: 1.6rem;
           font-weight: 400;
           line-height: 150%;
