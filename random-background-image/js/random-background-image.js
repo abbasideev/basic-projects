@@ -5,7 +5,6 @@ img[1] = "./img/bg-image-01.jpg";
 img[2] = "./img/bg-image-02.jpg";
 img[3] = "./img/bg-image-03.jpg";
 img[4] = "./img/bg-image-04.jpg";
-img[5] = "./img/bg-image-05.jpg";
 
 window.onload = function () {
   const random = Math.floor(Math.random() * img.length);
