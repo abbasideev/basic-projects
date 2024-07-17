@@ -24,8 +24,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   font-style: italic;
-  width: 96rem; /* 1920px 192/2 = 96 */
-  height: 54rem; /* 1080px 108/2 = 54 */
+  width: 96rem;
+  aspect-ratio: 16/9;
   border-radius: 0.8rem;
 }
 
