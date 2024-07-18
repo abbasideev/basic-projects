@@ -201,63 +201,9 @@ button {
           background: var(--color-primery-3);
           color: var(--color-primery-2);
         }
-        span:first-child {
-          margin-left: 0.8rem;
-        }
       }
     }
   }
-}
-
-/* / */
-
-/* tailwindcss.com colors */
-
-.html,
-.git {
-  color: #f97316; /* Orange 500 */
-}
-
-.css,
-.typescript {
-  color: #3b82f6; /* Blue 500 */
-}
-
-.sass {
-  color: #ec4899; /* Pink 500 */
-}
-
-.tailwind-css {
-  color: #06b6d4; /* Cyan 500 */
-}
-
-.javascript {
-  color: #eab308; /* Yellow 500 */
-}
-
-.react,
-.vscode,
-.algorithms {
-  color: #0ea5e9; /* Sky 500 */
-}
-
-.web-apis,
-.data-structures {
-  color: #ef4444; /* Red 500 */
-}
-
-.clean-code {
-  color: #22c55e; /* Green 500 */
-}
-
-.next-js,
-.github,
-.powershell {
-  color: #a3a3a3; /* Neutral 400 */
-}
-
-.regular-expression {
-  color: #10b981; /* Emerald 500 */
 }
 
 /* / */
