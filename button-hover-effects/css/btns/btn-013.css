@@ -1,0 +1,20 @@
+.btn-013 {
+  &:any-link {
+    color: var(--color-secondary-3);
+    border: 0.2rem solid var(--color-secondary-3);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    color: var(--color-primery-1);
+    background: var(--color-secondary-3);
+    box-shadow: 0 0 2rem var(--color-secondary-3);
+    letter-spacing: 0.5rem;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

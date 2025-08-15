@@ -1,0 +1,29 @@
+.btn-045 {
+  &:any-link {
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    position: relative;
+  }
+
+  &:before {
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: var(--color-secondary-5);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover:before {
+    background: var(--color-secondary-5);
+    width: 100%;
+  }
+
+  span {
+    color: var(--color-primery-1);
+    mix-blend-mode: lighten;
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode */
+  }
+}

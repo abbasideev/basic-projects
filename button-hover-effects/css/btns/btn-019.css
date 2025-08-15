@@ -1,0 +1,73 @@
+.btn-019 {
+  &:any-link {
+    color: var(--color-secondary-9);
+    border: 0.2rem solid var(--color-secondary-9);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primery-1);
+    box-shadow: 0 0 2rem var(--color-secondary-9);
+  }
+
+  &:before,
+  &:after,
+  span:before,
+  span:after {
+    content: "";
+    position: absolute;
+    width: 26%;
+    height: 100%;
+    background: var(--color-secondary-9);
+    z-index: -1;
+    transition: all 0.1s;
+  }
+
+  &:before {
+    top: 100%;
+    left: 0%;
+  }
+
+  &:hover:before {
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    top: -100%;
+    right: 0;
+    transition-delay: 0.3s;
+  }
+
+  &:hover:after {
+    top: 0;
+    right: 0;
+  }
+
+  span:before {
+    top: -100%;
+    left: 25%;
+    transition-delay: 0.1s;
+  }
+
+  &:hover span:before {
+    top: 0;
+    left: 25%;
+  }
+
+  span:after {
+    bottom: -100%;
+    right: 25%;
+    transition-delay: 0.2s;
+  }
+
+  &:hover span:after {
+    bottom: 0;
+    right: 25%;
+  }
+}

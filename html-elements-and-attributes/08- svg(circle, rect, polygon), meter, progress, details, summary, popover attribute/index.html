@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Elements And Attributes</title>
+  </head>
+
+  <body>
+    <!-- / -->
+    <hr />
+    svg(circle, rect, polygon)
+    <hr />
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="black"
+        stroke-width="4"
+        fill="red"
+      />
+    </svg>
+    <br />
+    <svg width="200" height="100">
+      <rect
+        width="200"
+        height="100"
+        style="fill: red; stroke-width: 10; stroke: black"
+      />
+    </svg>
+    <br />
+    <svg width="300" height="200">
+      <polygon
+        points="100,10 40,198 190,78 10,78 160,198"
+        style="fill: red; stroke: black; stroke-width: 5; fill-rule: evenodd"
+      />
+    </svg>
+
+    <!-- / -->
+    <hr />
+    meter, progress
+    <hr />
+    <label for="disk_c">local disk c:</label>
+    <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter>200gb usage
+    / 800gb free
+    <br />
+    <label for="disk_d">local disk d:</label>
+    <meter id="disk_d" value="0.6">60%</meter>600gb usage / 400gb free
+    <br />
+    <br />
+    <label for="file">downloading progress:</label>
+    <progress id="file" value="70" max="100"></progress>70%
+
+    <!-- / -->
+    <hr />
+    details, summary
+    <hr />
+    <details>
+      <summary>what is javascript?</summary>
+      <p>
+        javascript, often abbreviated as js, is a programming language and core
+        technology of the web, alongside html and css. 99% of websites use
+        javascript on the client side for webpage behavior. web browsers have a
+        dedicated javascript engine that executes the client code.
+      </p>
+    </details>
+
+    <!-- / -->
+    <hr />
+    popover attribute
+    <hr />
+    <button popovertarget="popover-1">open popover 1</button>
+    <div popover id="popover-1">this is popover 1</div>
+
+    <button popovertarget="popover-2">open popover 2</button>
+    <div popover id="popover-2">
+      <h3>this is popover 1</h3>
+      <p>lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+.btn-026 {
+  &:any-link {
+    color: var(--color-secondary-6);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primery-1);
+  }
+
+  span {
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    background: var(--color-secondary-6);
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transition: all 0.5s;
+    transform-origin: left;
+  }
+
+  &:hover span {
+    transform: scaleX(1);
+  }
+
+  span:nth-child(2) {
+    top: 25%;
+    transition-delay: 0.15s;
+  }
+
+  span:nth-child(3) {
+    top: 50%;
+    transition-delay: 0.3s;
+  }
+
+  span:nth-child(4) {
+    top: 75%;
+    transition-delay: 0.45s;
+  }
+}

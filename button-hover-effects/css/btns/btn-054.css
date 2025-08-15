@@ -1,0 +1,21 @@
+.btn-054 {
+  &:any-link {
+    color: var(--color-secondary-4);
+    border: 0.2rem solid var(--color-secondary-4);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.2s;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem var(--color-secondary-4);
+  }
+
+  &:hover {
+    color: var(--color-primery-1);
+    background: var(--color-secondary-4);
+    box-shadow: 0 0 1rem var(--color-secondary-4);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

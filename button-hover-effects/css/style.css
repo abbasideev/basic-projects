@@ -1,0 +1,86 @@
+@import url(./base.css);
+
+/* 
+//// run in powershell
+for($i=0;$i -lt 10;$i++){ni btn-00$i".css"};
+or
+for($i=0;$i -le 9;$i++){ni btn-00$i".css"};
+
+for($i=10;$i -lt 61;$i++){ni btn-0$i".css"};
+or
+for($i=10;$i -le 60;$i++){ni btn-0$i".css"};
+*/
+
+/* 
+//// run in powershell
+for($i=0;$i -lt 10;$i++){write-host "@import url(./btns/btn-00$i.css);"};
+or
+for($i=0;$i -le 9;$i++){write-host "@import url(./btns/btn-00$i.css);"};
+
+
+for($i=10;$i -lt 61;$i++){write-host "@import url(./btns/btn-0$i.css);"};
+or
+for($i=10;$i -le 60;$i++){write-host "@import url(./btns/btn-0$i.css);"};
+*/
+
+@import url(./btns/btn-000.css);
+@import url(./btns/btn-001.css);
+@import url(./btns/btn-002.css);
+@import url(./btns/btn-003.css);
+@import url(./btns/btn-004.css);
+@import url(./btns/btn-005.css);
+@import url(./btns/btn-006.css);
+@import url(./btns/btn-007.css);
+@import url(./btns/btn-008.css);
+@import url(./btns/btn-009.css);
+@import url(./btns/btn-010.css);
+@import url(./btns/btn-011.css);
+@import url(./btns/btn-012.css);
+@import url(./btns/btn-013.css);
+@import url(./btns/btn-014.css);
+@import url(./btns/btn-015.css);
+@import url(./btns/btn-016.css);
+@import url(./btns/btn-017.css);
+@import url(./btns/btn-018.css);
+@import url(./btns/btn-019.css);
+@import url(./btns/btn-020.css);
+@import url(./btns/btn-021.css);
+@import url(./btns/btn-022.css);
+@import url(./btns/btn-023.css);
+@import url(./btns/btn-024.css);
+@import url(./btns/btn-025.css);
+@import url(./btns/btn-026.css);
+@import url(./btns/btn-027.css);
+@import url(./btns/btn-028.css);
+@import url(./btns/btn-029.css);
+@import url(./btns/btn-030.css);
+@import url(./btns/btn-031.css);
+@import url(./btns/btn-032.css);
+@import url(./btns/btn-033.css);
+@import url(./btns/btn-034.css);
+@import url(./btns/btn-035.css);
+@import url(./btns/btn-036.css);
+@import url(./btns/btn-037.css);
+@import url(./btns/btn-038.css);
+@import url(./btns/btn-039.css);
+@import url(./btns/btn-040.css);
+@import url(./btns/btn-041.css);
+@import url(./btns/btn-042.css);
+@import url(./btns/btn-043.css);
+@import url(./btns/btn-044.css);
+@import url(./btns/btn-045.css);
+@import url(./btns/btn-046.css);
+@import url(./btns/btn-047.css);
+@import url(./btns/btn-048.css);
+@import url(./btns/btn-049.css);
+@import url(./btns/btn-050.css);
+@import url(./btns/btn-051.css);
+@import url(./btns/btn-052.css);
+@import url(./btns/btn-053.css);
+@import url(./btns/btn-054.css);
+@import url(./btns/btn-055.css);
+@import url(./btns/btn-056.css);
+@import url(./btns/btn-057.css);
+@import url(./btns/btn-058.css);
+@import url(./btns/btn-059.css);
+@import url(./btns/btn-060.css);

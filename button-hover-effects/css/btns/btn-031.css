@@ -1,0 +1,44 @@
+.btn-031 {
+  &:any-link {
+    color: var(--color-secondary-1);
+    border: 0.2rem solid var(--color-secondary-1);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    color: var(--color-primery-1);
+    background: var(--color-secondary-1);
+    box-shadow: 0 0 1.6rem var(--color-secondary-1);
+    letter-spacing: 0.2rem;
+    animation: btn31 0.3s linear;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+@keyframes btn31 {
+  20% {
+    transform: rotate(10deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}

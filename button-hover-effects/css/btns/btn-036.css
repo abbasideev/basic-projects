@@ -1,0 +1,61 @@
+.btn-036 {
+  &:any-link {
+    color: var(--color-primery-1);
+    background: var(--color-secondary-1);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    animation: btn36 10s ease-in-out infinite;
+  }
+}
+
+@keyframes btn36 {
+  0% {
+    box-shadow: 0 0 2rem var(--color-secondary-1);
+    background: var(--color-secondary-1);
+  }
+  10% {
+    box-shadow: 0 0 2rem var(--color-secondary-2);
+    background: var(--color-secondary-2);
+  }
+  20% {
+    box-shadow: 0 0 2rem var(--color-secondary-3);
+    background: var(--color-secondary-3);
+  }
+  30% {
+    box-shadow: 0 0 2rem var(--color-secondary-4);
+    background: var(--color-secondary-4);
+  }
+  40% {
+    box-shadow: 0 0 2rem var(--color-secondary-5);
+    background: var(--color-secondary-5);
+  }
+  50% {
+    box-shadow: 0 0 2rem var(--color-secondary-6);
+    background: var(--color-secondary-6);
+  }
+  60% {
+    box-shadow: 0 0 2rem var(--color-secondary-7);
+    background: var(--color-secondary-7);
+  }
+  70% {
+    box-shadow: 0 0 2rem var(--color-secondary-8);
+    background: var(--color-secondary-8);
+  }
+  80% {
+    box-shadow: 0 0 2rem var(--color-secondary-9);
+    background: var(--color-secondary-9);
+  }
+  90% {
+    box-shadow: 0 0 2rem var(--color-secondary-10);
+    background: var(--color-secondary-10);
+  }
+  100% {
+    box-shadow: 0 0 2rem var(--color-secondary-1);
+    background: var(--color-secondary-1);
+  }
+}

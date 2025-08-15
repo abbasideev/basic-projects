@@ -1,0 +1,41 @@
+.btn-040 {
+  &:any-link {
+    color: var(--color-primery-1);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    background-image: linear-gradient(
+      to right,
+      var(--color-secondary-1),
+      var(--color-secondary-1) 16.65%,
+      var(--color-secondary-2) 16.65%,
+      var(--color-secondary-2) 33.3%,
+      var(--color-secondary-4) 33.3%,
+      var(--color-secondary-4) 49.95%,
+      var(--color-secondary-3) 49.95%,
+      var(--color-secondary-3) 66.6%,
+      var(--color-secondary-5) 66.6%,
+      var(--color-secondary-5) 83.25%,
+      var(--color-secondary-9) 83.25%,
+      var(--color-secondary-9) 100%,
+      var(--color-secondary-1) 100%
+    );
+  }
+
+  &:hover {
+    animation: btn40 2s linear infinite;
+    box-shadow: 0 0 2rem var(--color-primery-1);
+  }
+
+  &:active {
+    opacity: 70%;
+    box-shadow: 0 0 1rem var(--color-primery-1);
+  }
+}
+
+@keyframes btn40 {
+  to {
+    background-position: 30vh;
+  }
+}

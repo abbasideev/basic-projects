@@ -1,0 +1,41 @@
+.btn-028 {
+  &:any-link {
+    color: var(--color-primery-1);
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    transition: all 0.4s;
+    position: relative;
+  }
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 0.5rem;
+    background: var(--color-secondary-1);
+    position: absolute;
+    top: 120%;
+    left: 0;
+    transition: all 0.4s;
+  }
+
+  &:hover:before {
+    width: 50%;
+    transform: translateX(100%);
+  }
+
+  &:after {
+    content: "";
+    width: 0;
+    height: 0.5rem;
+    background: var(--color-secondary-7);
+    position: absolute;
+    top: 120%;
+    right: 0;
+    transition: all 0.4s;
+  }
+
+  &:hover:after {
+    width: 50%;
+    transform: translateX(-100%);
+  }
+}

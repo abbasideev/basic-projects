@@ -1,0 +1,16 @@
+.btn-060 {
+  &:any-link {
+    svg {
+      width: 8rem;
+      fill: var(--color-primery-1);
+      transition: all 0.4s;
+    }
+  }
+
+  &:hover,
+  &:active {
+    svg {
+      fill: var(--color-secondary-5);
+    }
+  }
+}

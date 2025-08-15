@@ -1,0 +1,17 @@
+.btn-049 {
+  &:any-link {
+    color: var(--color-secondary-9);
+    text-decoration: none;
+    padding: 1rem 3rem;
+    transition: all 0.3s;
+    letter-spacing: 0.5rem;
+    box-shadow: 0 0 2rem var(--color-secondary-9);
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primery-1);
+    background: var(--color-secondary-9);
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+  }
+}

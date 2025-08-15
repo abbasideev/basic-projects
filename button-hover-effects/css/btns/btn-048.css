@@ -1,0 +1,143 @@
+.btn-048 {
+  &:any-link {
+    background: var(--color-secondary-8);
+    color: var(--color-primery-1);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    position: relative;
+    transition: all 0.3s;
+    box-shadow: 0 0 1rem var(--color-secondary-8);
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-secondary-8);
+    background: none;
+    box-shadow: 0 0 0 var(--color-secondary-8);
+    border: none;
+
+    .btn-048-line-1 {
+      box-shadow: 0 0 2rem var(--color-secondary-8);
+      animation: btn48a1 1500ms infinite ease;
+    }
+
+    .btn-048-line-2 {
+      box-shadow: 0 0 2rem var(--color-secondary-8);
+      animation: btn48a2 1500ms infinite ease;
+    }
+
+    .btn-048-line-3 {
+      box-shadow: 0 0 2rem var(--color-secondary-8);
+      animation: btn48a3 1500ms infinite ease;
+    }
+
+    .btn-048-line-4 {
+      box-shadow: 0 0 2rem var(--color-secondary-8);
+      animation: btn48a4 1500ms infinite ease;
+    }
+  }
+
+  .btn-048-line-1 {
+    content: "";
+    position: absolute;
+    width: 0.2rem;
+    background: var(--color-secondary-8);
+    left: 0;
+    bottom: 0;
+  }
+
+  .btn-048-line-2 {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    background: var(--color-secondary-8);
+    left: 0;
+    top: 0;
+  }
+
+  .btn-048-line-3 {
+    content: "";
+    position: absolute;
+    width: 0.2rem;
+    background: var(--color-secondary-8);
+    right: 0;
+    top: 0;
+  }
+
+  .btn-048-line-4 {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    background: var(--color-secondary-8);
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes btn48a1 {
+  0% {
+    height: 100%;
+    bottom: 0;
+  }
+  54% {
+    height: 0;
+    bottom: 100%;
+  }
+  55% {
+    height: 0;
+    bottom: 0;
+  }
+  100% {
+    height: 100%;
+    bottom: 0;
+  }
+}
+
+@keyframes btn48a2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes btn48a3 {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  54% {
+    height: 0;
+    top: 100%;
+  }
+  55% {
+    height: 0;
+    top: 0;
+  }
+  100% {
+    height: 100%;
+    top: 0;
+  }
+}
+
+@keyframes btn48a4 {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  55% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}

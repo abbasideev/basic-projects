@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Elements And Attributes</title>
+  </head>
+
+  <body>
+    <!-- / -->
+    <hr />
+    form, label, input, textarea, select, optgroup, option, datalist, button
+    <hr />
+
+    <!-- / -->
+    <form action="./server.html" method="#">
+      <label for="user"> user name: </label><br />
+      <input type="text" id="user" name="user-name" maxlength="20" required />
+      <br />
+      <label for="password"> password: </label><br />
+      <input
+        type="password"
+        id="password"
+        name="user-password"
+        minlength="8"
+        required
+      />
+      <br />
+      <label for="email"> email: </label><br />
+      <input type="email" id="email" name="user-email" />
+      <br />
+      <label for="descriotion"> description: </label><br />
+      <textarea
+        id="descriotion"
+        name="user-descriotion"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <!-- <input type="reset" /> -->
+      <button type="reset">reset</button>
+      <!-- <input type="submit" value="Send" /> -->
+      <button type="submit">send</button>
+    </form>
+    <hr />
+
+    <!-- / -->
+    <form action="#">
+      <label> please select your favorite operating system: </label><br />
+      windows<input
+        name="os-favorite-radio"
+        type="radio"
+        value="windows"
+      />&nbsp;&nbsp; mac<input
+        name="os-favorite-radio"
+        type="radio"
+        value="mac"
+        checked
+      />&nbsp;&nbsp; linux<input
+        name="os-favorite-radio"
+        type="radio"
+        value="linux"
+      />
+      <hr />
+
+      <!-- / -->
+      <label> please select your favorite operating system: </label>
+      <br />
+      <select name="os-favorite-select">
+        <option value="windows">windows</option>
+        <option value="mac" selected>mac</option>
+        <option value="linux">linux</option>
+      </select>
+      <select name="os-favorite-select">
+        <optgroup label="windows">
+          <option value="windows 7">windows 7</option>
+          <option value="windows 10">windows 10</option>
+          <option value="windows 11">windows 11</option>
+        </optgroup>
+        <optgroup label="mac os">
+          <option value="mac os 11">mac os 11</option>
+          <option value="mac os 12">mac os 12</option>
+          <option value="mac os 13">mac os 13</option>
+        </optgroup>
+        <optgroup label="linux os">
+          <option value="ubuntu">ubuntu</option>
+          <option value="debian">debian</option>
+          <option value="gentoo">gentoo</option>
+        </optgroup>
+      </select>
+      <input type="text" list="os-favorite-list" />
+      <datalist id="os-favorite-list">
+        <option value="windows" />
+        <option value="mac" />
+        <option value="linux" />
+      </datalist>
+      <hr />
+
+      <!-- / -->
+      <label> what operating systems did you work with? </label><br />
+      <select size="3" multiple>
+        <option value="windows">windows</option>
+        <option value="mac">mac</option>
+        <option value="linux">linux</option>
+      </select>
+      <select name="os-work-select" size="3" multiple>
+        <option value="windows" selected>windows</option>
+        <option value="mac" selected>mac</option>
+        <option value="linux">linux</option>
+      </select>
+      <hr />
+
+      <!-- / -->
+      <label> what operating systems did you work with? </label><br />
+      windows<input
+        type="checkbox"
+        name="os-checkbox-work"
+        value="windows"
+      />&nbsp;&nbsp; mac<input
+        type="checkbox"
+        name="os-checkbox-work"
+        value="mac"
+      />&nbsp;&nbsp; linux<input
+        type="checkbox"
+        name="os-checkbox-work"
+        value="linux"
+      />
+      <hr />
+
+      <!-- / -->
+      <label> what operating systems did you work with? </label><br />
+      windows<input
+        type="checkbox"
+        name="os-checkbox-work"
+        value="windows"
+        checked
+      />&nbsp;&nbsp; mac<input
+        type="checkbox"
+        name="os-checkbox-work"
+        value="mac"
+        checked
+      />&nbsp;&nbsp; linux<input
+        type="checkbox"
+        name="os-checkbox-work"
+        value="linux"
+      />
+      <hr />
+
+      <!-- / -->
+      <label for="select-file">select file</label><br />
+      <input type="file" id="select-file" />
+      <hr />
+
+      <!-- / -->
+      <label for="select-files">select files</label><br />
+      <input type="file" id="select-files" multiple />
+    </form>
+    <hr />
+
+    <!-- / -->
+    <form action="#">
+      <!-- / -->
+      <label>search</label><br />
+      <input type="search" placeholder="search ..." />
+      <input type="button" value="search" />
+      <hr />
+
+      <!-- / -->
+      <label>color</label><br />
+      <input type="color" />
+      <hr />
+
+      <!-- / -->
+      <label>date</label><br />
+      <input type="date" />
+      <hr />
+
+      <!-- / -->
+      <label>month</label><br />
+      <input type="month" />
+      <hr />
+
+      <!-- / -->
+      <label>week</label><br />
+      <input type="week" />
+      <hr />
+
+      <!-- / -->
+      <label>time</label><br />
+      <input type="time" />
+      <hr />
+
+      <!-- / -->
+      <label>number</label><br />
+      <input type="number" />
+      <hr />
+
+      <!-- / -->
+      <label>number (1-20) </label><br />
+      <input type="number" min="1" max="20" />
+      <hr />
+
+      <!-- / -->
+      <label>range</label><br />
+      <input type="range" />
+      <hr />
+
+      <!-- / -->
+      <label>range (1-9 (step=3) )</label><br />
+      <input type="range" min="0" max="9" step="3" value="0" />
+    </form>
+    <hr />
+  </body>
+</html>

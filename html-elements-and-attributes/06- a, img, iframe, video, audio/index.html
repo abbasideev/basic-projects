@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Elements And Attributes</title>
+  </head>
+
+  <body>
+    <!-- / -->
+    <hr />
+    a
+    <hr />
+
+    <!-- absolute link (external link) -->
+    <a href="https://www.amazon.com/">amazon</a><br />
+    <a>amazon</a><br />
+
+    <!-- relative link -->
+    <a href="./about.html">go to about page</a><br />
+    <a href="./about.html" target="_blank">go to about page</a><br />
+
+    <!-- internal link -->
+    <a href="#video">go to video</a><br />
+
+    <!-- email link -->
+    <a href="mailto:example@example.com">send an email</a><br />
+
+    <!-- file link -->
+    <a href="./image.jpg">download image</a><br />
+
+    <!-- / -->
+    <hr />
+    img
+    <hr />
+    <img src="./image.jpg" alt="test-img-1" />
+    <br />
+    <img
+      src="https://cpwebassets.codepen.io/assets/social/facebook-default-05cf522ae1d4c215ae0f09d866d97413a2204b6c9339c6e7a1b96ab1d4a7340f.png"
+      alt="test-img-2"
+    />
+    <br />
+    <img src="" alt="codepen" title="codepen logo" />
+    <br />
+    <img src="./image.jpg" width="200px" height="400px" />
+    <br />
+    <img src="./image.jpg" width="400px" height="200px" />
+
+    <!-- / -->
+    <hr />
+    iframe
+    <hr />
+    <iframe
+      src="./about.html"
+      frameborder="0"
+      width="200px"
+      height="200px"
+    ></iframe>
+    <hr />
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25897.783872304295!2d51.35553593634562!3d35.76989854373505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e06f8e6ad6b4b%3A0x4fde4f4d6ca30e47!2sVanak%2C%20District%203%2C%20Tehran%2C%20Tehran%20Province%2C%20Iran!5e0!3m2!1sen!2suk!4v1667290597148!5m2!1sen!2suk"
+      width="600"
+      height="450"
+      style="border: none"
+    ></iframe>
+
+    <!-- / -->
+    <hr />
+    video, audio
+    <hr />
+
+    <!-- way 1 -->
+    <video width="400px" controls id="video">
+      <source src="./video.mp4" />
+    </video>
+    <audio controls>
+      <source src="./music.mp3" />
+    </audio>
+    <br />
+
+    <!-- way 2 -->
+    <video src="./video.mp4" width="400px" controls></video>
+    <audio src="./music.mp3" controls></audio>
+    <!-- other attributes = loop , autoplay , ... -->
+  </body>
+</html>

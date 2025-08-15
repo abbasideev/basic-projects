@@ -1,0 +1,22 @@
+.btn-055 {
+  &:any-link {
+    color: var(--color-primery-1);
+    border: 0.2rem solid var(--color-secondary-5);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.2s;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--color-secondary-5);
+    background: var(--color-secondary-5);
+  }
+
+  &:hover {
+    color: var(--color-secondary-5);
+    background: var(--color-primery-2);
+    box-shadow: 0 0 2rem var(--color-secondary-5);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}

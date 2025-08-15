@@ -1,0 +1,37 @@
+.btn-014 {
+  &:any-link {
+    color: var(--color-secondary-4);
+    border: 0.2rem solid var(--color-secondary-4);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primery-1);
+    box-shadow: 0 0 2rem var(--color-secondary-4);
+  }
+
+  &:before {
+    content: "Hello";
+    color: var(--color-primery-1);
+    background: var(--color-secondary-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s;
+    transform: translateY(-100%);
+  }
+
+  &:hover:before {
+    transform: translateX(0);
+  }
+}

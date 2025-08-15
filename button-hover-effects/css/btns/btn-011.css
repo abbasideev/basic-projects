@@ -1,0 +1,35 @@
+.btn-011 {
+  &:any-link {
+    color: var(--color-secondary-1);
+    border: 0.2rem solid var(--color-secondary-1);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primery-1);
+    box-shadow: 0 0 2rem var(--color-secondary-1);
+  }
+
+  &:before {
+    content: "";
+    background: var(--color-secondary-1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: all 0.4s;
+    transform-origin: top right;
+    transform: rotate(-90deg);
+  }
+
+  &:hover:before {
+    transform: rotate(0deg);
+  }
+}

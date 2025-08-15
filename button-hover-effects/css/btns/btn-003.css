@@ -1,0 +1,18 @@
+.btn-003 {
+  &:any-link {
+    color: var(--color-secondary-3);
+    border: 0.2rem solid var(--color-secondary-3);
+    border-radius: 1rem;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.6s;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primery-1);
+    background: var(--color-secondary-3);
+    box-shadow: 0 0 3rem var(--color-secondary-3);
+    transform: rotate(360deg);
+  }
+}
